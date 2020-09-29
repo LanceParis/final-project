@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/527e4d2041.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,9 +11,11 @@
 
     <!-- Photo by Ivan Samkov from Pexels -->
 
-    <header>
-        <img class="logo" src="img/Woodworking Logo.svg" href="index.html" alt="Company logo">
-        <nav>
+    <header class="clearfix">
+      <nav>
+        <a href="index.html">
+          <img class="logo" src="img/Woodworking Logo.svg" alt="Company logo">
+        </a>
             <ul class="nav-text">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -29,18 +32,22 @@
     </div>
     
     <footer class="footer">
-        <div class="container-footer">
-          <div class="left-footer">
-            © 2020 Rustic Renovations All Rights Reserved.
-          </div>
-          <div class="icon-container-center">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-          </div>
+      <div class="container-footer">
+        <div class="left-footer">
+          © 2020 Rustic Renovations All Rights Reserved.
         </div>
-      </footer>
+        <div class="icon-container-center">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="right-footer">
+          info@rusticrenovations.com<br>
+          (559) 555-5555
+        </div>
+      </div>
+    </footer>
     
 </body>
 </html>

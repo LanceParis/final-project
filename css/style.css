@@ -9,49 +9,83 @@
     /* background-color: #efefef; */
   }
   
-  li, a {
+li, a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #EBCCA2;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
-  li a:hover {
+li a:hover {
     color: #ffffff;
     text-shadow: 0 0 3px #f5ffbc;
   }
-  
+
   header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding: 15px 10%;
+    padding: 15px 20%;
     box-sizing: border-box;
     background-color: #4B809E;
     display: flex;
+    z-index: 1;
   }
+
+
+/* .clearfix:after {
+    visibility: hidden;
+    display: block; 
+    font-size: 0; 
+    content: " "; 
+    clear: both; 
+    height: 0;
+  }  */
+
+/* header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #4B809E;
+  } */
+
+/* nav {
+    float: left;
+} */
+
+/* ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+} */
 
 
 
 .nav-text {
     list-style: none;
-    /* background-color: yellow; */
+    /* float: right; */
 }
 
-.nav-text li {
+/* li {
     display: inline-block;
     padding: 0px 20px;
-}
+} */
 
 .nav-text li a {
     transition: all  0.3s ease 0s;
 }
 
-.logo {
-    cursor: pointer;
-}
+/* a {
+  color: white;
+  text-decoration: none;
+  float: left;
+  padding: 20px;
+  text-transform: uppercase;
+} */
+
+
 
 /* HERO IMAGE */
 
@@ -65,14 +99,21 @@
 
 .hero-img {
     width: 100%;
-    height:400px;
+    height: 300px;
     object-fit: cover;
-    /* opacity: 0.3; */
+    opacity: 0.4;
     padding-top: 89px;
 }
 
 h1 {
     color: #000000;
+}
+
+.heading-text {
+    margin-top: 95px;
+    z-index: 1;
+    color: red;
+    text-align: center;
 }
 
 /* ABOUT PAGE */
@@ -88,9 +129,51 @@ h1 {
 /* CONTACT PAGE */
 
 .map {
-    padding: 150px 0px 250px 20px;
-    margin: 0px;
+    padding: 10px 0px 250px 20px;
+    
 }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+  }
+  
+  input[type=text]:focus {
+    background-color: #A2D0EB;
+    border-color: #4B809E;
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4B809E;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #A2D0EB;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    width: 30%;
+    border-radius: 5px;
+    background-color: #ebcca2;
+    padding: 20px;
+    margin: 150px 0px 25px 600px;
+  }
 
 /* INDEX.HTML PAGE */
 
@@ -140,25 +223,32 @@ h1 {
     width: 100%;
     margin: 0px;
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     background-color:#4B809E;
-    padding: 50px 20px 20px 20px;
+    padding: 20px 20px 30px 20px;
     display: inline-block;
     
 }
 
 
 .container-footer {
-    margin: 0px;
-    /* flex-direction: row; */
+    margin: 5px;
+    flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    display: flex;
+    /* display: flex; */
 }
 
 .left-footer {
+    margin: 0px;
     display: block;
-    text-align: left;
+    text-align: center;
+}
+
+
+.fab {
+    margin: 10px 30px;
+    text-align: center;
 }
 
 .fa-facebook-square {
@@ -211,8 +301,11 @@ h1 {
 
   .right-footer {
     display: block;
-    /* text-align: */
+    text-align: center;
 }
+
+
+
 
 /* background-image: url("https://bainbridgebarn.org/wp-content/uploads/2019/07/woodworking-cert-hero.jpg");
     background-size: 100%;
