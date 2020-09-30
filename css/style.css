@@ -16,6 +16,8 @@ li, a {
     color: #EBCCA2;
     text-decoration: none;
     text-transform: uppercase;
+    display: inline;
+    margin: 20px 10px;
   }
 
 li a:hover {
@@ -23,18 +25,37 @@ li a:hover {
     text-shadow: 0 0 3px #f5ffbc;
   }
 
-  header {
+  nav {
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     position: fixed;
-    padding: 15px 20%;
+    /* padding: 10px 150px 10px 100px; */
     box-sizing: border-box;
     background-color: #4B809E;
-    display: flex;
+    /* display: flex; */
     z-index: 1;
   }
 
+  nav {
+    float: left;
+}
+
+  .logo {
+    width: 400px;
+    /* float: center: */
+    padding: 20px 0px 0px 150px;
+  }
+  
+  .nav-text {
+      list-style: none;
+      float: right;
+      padding: 53px 150px 50px 0px;
+  }
+
+  .nav-text li a {
+    transition: all  0.3s ease 0s;
+}
 
 /* .clearfix:after {
     visibility: hidden;
@@ -51,10 +72,6 @@ li a:hover {
     background-color: #4B809E;
   } */
 
-/* nav {
-    float: left;
-} */
-
 /* ul {
     margin: 0;
     padding: 0;
@@ -62,20 +79,12 @@ li a:hover {
 } */
 
 
-
-.nav-text {
-    list-style: none;
-    /* float: right; */
-}
-
 /* li {
     display: inline-block;
     padding: 0px 20px;
 } */
 
-.nav-text li a {
-    transition: all  0.3s ease 0s;
-}
+
 
 /* a {
   color: white;
@@ -116,15 +125,53 @@ h1 {
     text-align: center;
 }
 
+
+
+
+
+
 /* ABOUT PAGE */
 
-.about-img {
-    width:25%;
-    height: 50%;
-    padding-top: 89px;
-    margin: 10px 10px 10px 50px;
-    display: flex;
+.column-one {
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width: 400px;
+  padding: 15px;
+  height: 500px; 
+  background-color: #EBCCA2;
+  /* border: solid black; */
+  margin: 115px 50px 20px 50px;
 }
+
+.img-size {
+  width: 100%;
+  /* padding-top: 89px; */
+  /* margin: 10px 10px 10px 50px; */
+  overflow: auto;
+}
+
+.column-two {
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width: 400px;
+  padding: 15px;
+  height: 500px; 
+  background-color: #EBCCA2;
+  /* border: solid black; */
+  margin: 115px 50px 20px 50px;
+}
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+
+
 
 /* CONTACT PAGE */
 
@@ -174,6 +221,9 @@ input[type=text], select, textarea {
     padding: 20px;
     margin: 150px 0px 25px 600px;
   }
+
+
+
 
 /* INDEX.HTML PAGE */
 
@@ -307,7 +357,3 @@ input[type=text], select, textarea {
 
 
 
-/* background-image: url("https://bainbridgebarn.org/wp-content/uploads/2019/07/woodworking-cert-hero.jpg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat; */
