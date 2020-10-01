@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     /* background-color: #efefef; */
+    font-family: 'Lato', sans-serif;
   }
   
 li, a {
@@ -157,14 +158,14 @@ h5 {
   font-size: 16px;
 }
 
-#thumbnail {
+#cards {
   box-shadow: 0 40px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.30);
   display: inline-block;
 }
 
 .card-wrapper {
   position: absolute;
-  margin-top: 200px;
+  margin-top: 150px;
   left: 50%;
   transform: translateX(-50%) translateY(-50%); 
   /* width: 100%; */
@@ -322,46 +323,56 @@ input[type=submit]:hover {
 
 /* INDEX.HTML PAGE */
 
+h1 {
+  padding: 15px;
+}
+
+.flexbox-equal-container {
+  padding-top: 10px;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #ebcca2;
+  margin-top: 575px;
+}
+
 .flexbox-first-column {
-    background-color: #EBCCA2;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  background-color: #EBCCA2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .flexbox-section {
-    background-color:#ffffff;
-    flex: 1;
-    padding: 15px 15px 15px 15px;
-    margin: 20px 10px 10px 20px;
+  background-color:#ffffff;
+  flex: 1;
+  /* padding: 15px 15px 15px 15px; */
+  margin: 20px 10px 10px 20px;
+}
+
+#featured-text {
+  text-align: left;
+  padding: 15px;
 }
 
 .flexbox-article {
     background-color: #ffffff;
     flex: 1;
-    padding: 15px 15px 15px 15px;
+    /* padding: 15px 15px 15px 15px; */
     margin: 10px 10px 20px 20px;
 }
 
-.flexbox-equal-container {
-    padding-top: 10px;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    background-color: #ebcca2;
-    margin-top: 25%;
-}
-
 .flexbox-aside {
-    background-color: #aadbf7;
+    background-color: #ffffff;
     padding: 15px 15px 15px 15px;
     margin: 20px 20px 20px 10px;
     flex: 1;
 }
 
 .img-right {
-  width: 400px;
+  width: 100%;
+  
 }
 
 
@@ -377,9 +388,7 @@ input[type=submit]:hover {
   background-color:#4B809E;
   padding: 20px 20px 30px 20px;
   display: inline-block;
-  
 }
-
 
 .container-footer {
   margin: 5px;
