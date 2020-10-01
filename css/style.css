@@ -12,7 +12,7 @@
 li, a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     color: #EBCCA2;
     text-decoration: none;
     text-transform: uppercase;
@@ -27,7 +27,7 @@ li a:hover {
 
 nav {
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: center; */
   position: fixed;
   /* padding: 10px 150px 10px 100px; */
@@ -127,9 +127,12 @@ nav {
     font-size: 1.8vmax;
 }
 
-iframe {
-  margin-top: 20px;
-  margin-left: 37%;
+.youtube {
+  position: relative;
+  margin-bottom: 70px;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.30);
 }
 
@@ -156,21 +159,25 @@ h5 {
 
 #thumbnail {
   box-shadow: 0 40px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.30);
+  display: inline-block;
 }
 
 .card-wrapper {
-  margin-top: 20px;
-  width: 100%;
+  position: absolute;
+  margin-top: 200px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+  /* width: 100%; */
   height: 200px;
   background-color: #EBCCA2;
 }
 
 .fullCard {
-  width: 15%;
+  width: 200px;
+  min-width: auto;
   height: 250px;
   border: 1px solid #ffffff;
-  border-radius: 0px;
-  margin: 80px 50px 80px 15%;
+  margin: 80px 50px 50px ;
   padding: 10px;
   float: left;
   position: relative;
@@ -185,11 +192,11 @@ h5 {
 }
 
 .fullCard2 {
-  width: 15%;
+  width: 200px;
   height: 250px;
   border: 1px solid #ffffff;
   border-radius: 0px;
-  margin: 80px 50px 80px ;
+  margin: 80px 50px 50px ;
   padding: 10px;
   float: left;
   position: relative;
@@ -198,11 +205,11 @@ h5 {
 }
 
 .fullCard3 {
-  width: 15%;
+  width: 200px;
   height: 250px;
   border: 1px solid #ffffff;
-  border-radius: 0px;
-  margin: 80px 15% 80px 50px;
+  /* margin: 80px 15% 80px 50px; */
+  margin: 80px 50px 50px ;
   padding: 10px;
   float: left;
   position: relative;
@@ -219,11 +226,10 @@ h5 {
   float: left;
   width: 400px;
   padding: 15px;
-  height: 500px; 
+  height: 600px; 
   background-color: #EBCCA2;
   /* border: solid black; */
-  margin: 115px 50px 20px 50px;
-  display: flex;
+  margin: 200px 50px 30px 150px;
 }
 
 .img-size {
@@ -237,12 +243,17 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   float: left;
-  width: 400px;
+  width: 700px;
   padding: 15px;
-  height: 500px; 
+  height: 600px; 
   background-color: #EBCCA2;
   /* border: solid black; */
-  margin: 115px 50px 20px 50px;
+  margin: 200px 150px 30px 50px;
+}
+
+#about-text {
+  text-align: left;
+  padding: 15px;
 }
 
 /* Clear floats after the columns */
@@ -257,10 +268,6 @@ h5 {
 
 /* CONTACT PAGE */
 
-.map {
-  padding: 10px 0px 250px 20px;
-    
-}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -297,24 +304,29 @@ input[type=submit]:hover {
   
   /* Add a background color and some padding around the form */
 .container {
-  width: 30%;
+  width: 500px;
   border-radius: 5px;
   background-color: #ebcca2;
   padding: 20px;
-  margin: 150px 0px 25px 600px;
+  /* margin: 150px 0px 25px 600px; */
+  margin: 175px 50px 50px 050px; 
+  float: left;
 }
 
-
+.map {
+  margin: 225px 30px 30px 150px; 
+  /* padding: 10px 0px 15px 20px; */
+  float: left;
+}
 
 
 /* INDEX.HTML PAGE */
 
-/* .flexbox-first-column {
+.flexbox-first-column {
     background-color: #EBCCA2;
     flex: 1;
     display: flex;
     flex-direction: column;
-    
 }
 
 .flexbox-section {
@@ -338,6 +350,7 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: row;
     background-color: #ebcca2;
+    margin-top: 25%;
 }
 
 .flexbox-aside {
@@ -345,7 +358,11 @@ input[type=submit]:hover {
     padding: 15px 15px 15px 15px;
     margin: 20px 20px 20px 10px;
     flex: 1;
-} */
+}
+
+.img-right {
+  width: 400px;
+}
 
 
 /* FOOTER FOR ALL PAGES */
